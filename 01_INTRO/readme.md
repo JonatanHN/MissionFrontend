@@ -1,8 +1,10 @@
 # Practica 1
 
-[Requirimientos ⚡](./Requerimientos.doc)
+[Requirimientos ⚡](./Requerimientos.docx)
 
-[Buyer Persona v.1 👨🏻‍💻](./BuyerPerson.doc)
+[Buyer Persona v.1 👨🏻‍💻](./BuyerPerson.docx)
+
+[Buyer Persona v.2 👨🏻‍💻](./BUYERPERSON.png)
 
 [Publico Objetivo 🙋🏻‍♂️](https://miro.com/app/board/uXjVOIyjThA=/?invite_link_id=311858802596)
 
