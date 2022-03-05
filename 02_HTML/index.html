@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='es'>
+
   <head>
     <!-- Metadatos -->
     <meta charset='utf-8' />
@@ -24,14 +25,12 @@
     <!-- Title -->
     <title>Pastelería Galáctica 🌠</title>
     <!-- Favicon -->
-    <link rel='icon' href='assets/images/cake.png'/>
+    <link rel='icon' href='assets/images/cake.png' />
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/20b942cdca.js" crossorigin="anonymous"></script>
     <!-- Map -->
     <!-- Scripts -->
-    <script>
-      alert('Se esta trabajando en el responsive y algunas cosas mas ⚡, el codigo es completamente limpio y hecho por su servidor: JonatanHN ☣️, tambien se que utilizar un alert es mala practica pero solo quiero informar para que no me descalifiquen JAJAJA. Muchas gracias por su atencion!!! 👀');
-    </script>
+
   </head>
 
   <body>
@@ -40,7 +39,7 @@
         <div class="all-services">
           <div class="ubication">
             <a href="contacto.html#map">
-              <i class="fa-solid fa-earth-americas"></i>  
+              <i class="fa-solid fa-earth-americas"></i>
               <span>Calle Falsa 123, Ciudad de México, CDMX</span>
             </a>
           </div>
@@ -51,8 +50,8 @@
             </a>
           </div>
           <div class="phone">
-            <a href="tel:+520000000000"><i class="fa-solid fa-phone"></i> 
-            (+52) 544-984-5648
+            <a href="tel:+520000000000"><i class="fa-solid fa-phone"></i>
+              (+52) 544-984-5648
             </a>
           </div>
           <div class="service">
@@ -93,14 +92,33 @@
           </a>
         </div>
         <div class="terms">
-          Todos los derechos reservados 
-          &copy 2022 <br> Hecho con amor por 
+          Todos los derechos reservados
+          &copy 2022 <br> Hecho con amor por
           <a target="_blank" href="https://jonatanhn.github.io">JonatanHN</a>
         </div>
       </div>
     </div>
     <!-- Scripts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const Toast = Swal.mixin({
+          toast: true,
+          position: 'bottom-end',
+          showConfirmButton: false,
+          timer: 5000,
+          background: '#222',
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
 
+        Toast.fire({
+          icon: 'info',
+          title: 'Se esta trabajando en el responsive y algunas cosas mas ⚡, el codigo es completamente limpio y hecho por su servidor: JonatanHN ☣️, tambien se que utilizar un alert es mala practica pero solo quiero informar para que no me descalifiquen JAJAJA. Muchas gracias por su atencion!!! 👀'
+        })
+    </script>
   </body>
 
 </html>
