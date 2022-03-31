@@ -1,17 +1,48 @@
 <template>
-  <div class="home">
-    <h1>This is an Inicio page</h1>
-  </div>
+	<div class="container d-flex">
+		<div class="card" style="width: 18rem">
+			<img src="none" class="card-img-top" alt="none" />
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+    <div class="card" style="width: 18rem">
+			<img src="none" class="card-img-top" alt="none" />
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+    <div class="card" style="width: 18rem">
+			<img src="none" class="card-img-top" alt="none" />
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  import HomeView from "./HomeView.vue";
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: "HomeView",
+    components: {
+      HomeView,
+    },
+  };
 </script>

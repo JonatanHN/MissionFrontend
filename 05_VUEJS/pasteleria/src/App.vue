@@ -1,20 +1,25 @@
 <template>
-  <NavBar></NavBar>
-  <HelloWorld></HelloWorld>
+  <NavBar/>
+  <router-view/>
+  <Footer/>
 </template>
 
 
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Home from '@/views/HomeView.vue'
+import Pastelero from '@/views/PasteleroView.vue'
 import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld,
-    NavBar
+    Home,
+    Pastelero,
+    NavBar,
+    Footer
   }
 }
 </script>
@@ -27,6 +32,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 nav {
